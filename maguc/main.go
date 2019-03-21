@@ -26,10 +26,10 @@ var locations arrayFlags
 
 func main() {
 	token := flag.String("token", "", "Github auth token")
-	amount := flag.Int("amount", 500, "Amount of users to show")
-	considerNum := flag.Int("consider", 1000, "Amount of users to consider")
+	amount := flag.Int("amount", 100, "Amount of users to show")
+	considerNum := flag.Int("consider", 200, "Amount of users to consider")
 	outputOpt := flag.String("output", "csv", "Output format: plain, csv")
-	fileName := flag.String("file", "", "Output file (optional, defaults to stdout)")
+	fileName := flag.String("file", "ghana.csv", "Output file (optional, defaults to stdout)")
 	preset := flag.String("preset", "", "Preset (optional)")
 
 	flag.Var(&locations, "location", "Location to query")

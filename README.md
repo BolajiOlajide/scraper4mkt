@@ -16,3 +16,14 @@ then running the binary outputed as `maguc` and passing the flags needed. I've c
 ./maguc -token=<GITHUB_TOKEN> -preset=[NIGERIA|GHANA|EGYPT] -file=<filename>.csv
 ```
 
+Once the CSV's have been generated with `maguc`, you can then proceed to cleaning up the data and fetching null data from the Github API.
+
+- Open the `main.py`, specify the `.csv`'s to be used, ensure they are in the root directory.
+- Supply the github token to be used to make requests
+- run the python script with the command
+
+```bash
+python main.py
+```
+
+😫
